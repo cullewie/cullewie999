@@ -1,1 +1,1 @@
-cullewie999 windows 11 powerplan for cs2 
+Cullewie999 Powerplan for CS2 – optimized for max FPS and minimal input lag

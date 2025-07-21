@@ -11,7 +11,7 @@ if "%NEWGUID%"=="" (
 )
 
 echo [#] New GUID is %NEWGUID%
-powercfg /changename %NEWGUID% "Cullewié 999"
+powercfg /changename %NEWGUID% "Cullewie 999"
 
 echo CPU 100% set
 powercfg /setacvalueindex %NEWGUID% SUB_PROCESSOR PROCTHROTTLEMIN 100

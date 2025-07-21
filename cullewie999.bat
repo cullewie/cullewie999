@@ -11,7 +11,7 @@ if "%NEWGUID%"=="" (
 )
 
 echo [#] New GUID is %NEWGUID%
-powercfg /changename %NEWGUID% "Cullewie 999"
+powercfg /changename %NEWGUID% "Cullewie999"
 
 echo CPU 100% set
 powercfg /setacvalueindex %NEWGUID% SUB_PROCESSOR PROCTHROTTLEMIN 100
@@ -63,6 +63,6 @@ powercfg /setactive %NEWGUID%
 echo TimerResolution 0.5ms registry setting applied
 reg add "HKLM\SYSTEM\CurrentControlSet\Control\Session Manager\kernel" /v "GlobalTimerResolutionRequests" /t REG_DWORD /d 1 /f >nul 2>&1
 
-echo [✓] Power plan applied successfully.
-echo [!] Please reboot your system.
+echo Power plan applied successfully.
+echo Please reboot your system.
 pause

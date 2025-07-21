@@ -1,5 +1,5 @@
 @echo off
-title CULLEWIE MAX
+title cullewie999
 echo [#] Preparing...
 
 for /f "tokens=4 delims= " %%A in ('powercfg -duplicatescheme 8c5e7fda-e8bf-4a96-9a85-a6e23a8c635c') do set NEWGUID=%%A
@@ -11,6 +11,7 @@ if "%NEWGUID%"=="" (
 )
 
 echo [#] New GUID is %NEWGUID%
+powercfg /changename %NEWGUID% "Cullewié 999"
 
 echo CPU 100% set
 powercfg /setacvalueindex %NEWGUID% SUB_PROCESSOR PROCTHROTTLEMIN 100
